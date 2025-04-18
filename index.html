@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Hướng Dẫn Viên Ảo Thái Nguyên</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-image: url('mountain_background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    }
+    #container {
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 700px;
+      margin: auto;
+    }
+    #avatar {
+      width: 100px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    #chat-output {
+      margin-top: 20px;
+      padding: 10px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      min-height: 50px;
+    }
+    input {
+      width: 70%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      padding: 10px 15px;
+      border: none;
+      background: #0a74da;
+      color: white;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img src="avatar_ai.png" id="avatar" alt="AI Avatar" />
+    <h2>🧭 Hướng Dẫn Viên Ảo Thái Nguyên</h2>
+    <input type="text" id="user-input" placeholder="Hỏi gì đi bạn..." />
+    <button onclick="sendMessage()">Gửi</button>
+    <div id="chat-output"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
